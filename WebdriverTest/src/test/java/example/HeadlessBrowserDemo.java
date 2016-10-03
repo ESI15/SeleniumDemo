@@ -13,8 +13,8 @@ public class HeadlessBrowserDemo {
 
 	public static void main(String[] args) {
 	
-	
-        
+	 
+        //phantom
 		File file = new File("C:/Program Files/phantomjs-2.1.1-windows/bin/phantomjs.exe");				
         System.setProperty("phantomjs.binary.path", file.getAbsolutePath());		
         WebDriver driver = new PhantomJSDriver();	
