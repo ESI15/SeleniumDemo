@@ -2,13 +2,12 @@ package example;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-
 import org.testng.annotations.Test;
 
 
 public class NewTest2 {
   @Test
-  public void actualtitle() {
+  public void actualtitle() throws InterruptedException {
 	// declaration and instantiation of objects/variables
 	  //okkkkk
 		
@@ -21,6 +20,11 @@ public class NewTest2 {
 	        
 	     // launch Firefox and direct it to the Base URL
 	         driver.get(baseUrl);
+	         
+	         
+	      // maximize the browser window
+	        driver.manage().window().maximize();
+
 	         
 	     // get the actual value of the title
 	        actualTitle = driver.getTitle();
